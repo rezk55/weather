@@ -1,0 +1,30 @@
+
+
+
+@media (max-width:992px){
+
+    nav .menu a {
+        border-bottom: 1px solid var(--bg-second-color);
+        padding: 15px 0 !important;
+        background-color: var(--bg-third-color);
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    
+    nav .menu a:hover {
+        box-shadow: none;
+    }
+
+    nav .menu .active {
+        box-shadow: none;
+    }
+}
+
+@media (max-width:575px){
+    #home .card .temperature span {
+        font-size: 3.5rem;
+    }
+}

@@ -1,0 +1,211 @@
+:root {
+    --main-color: #009AD8;
+    --text-color: #FFFFFF;
+    --text-muted: #ffffffb2;
+    --bg-color: #1E202B;
+    --bg-second-color: #323544;
+    --bg-third-color: #262936;
+}
+
+body {
+    font-family: "Roboto", "Open Sans", sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* navbar  */
+nav {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 30px 0 50px 0 !important;
+}
+
+nav .logo p {
+    font-size: 1rem;
+}
+
+nav .logo span {
+    font-size: 0.6rem;
+}
+
+nav .navbar-toggler {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    box-shadow: none !important;
+    border: none ;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+nav .navbar-toggler:hover {
+    box-shadow: 0 0 0 2px var(--main-color) !important;
+    color: var(--main-color);
+}
+
+nav .navbar-toggler i {
+    font-size: 1rem;
+}
+
+nav .menu {
+    margin-top: 20px;
+}
+
+nav .menu li {
+    text-align: center;
+}
+
+nav .menu a {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    padding: 2px 25px !important;
+    transition:all 0.4s ;
+    -webkit-transition:all 0.4s ;
+    -moz-transition:all 0.4s ;
+    -ms-transition:all 0.4s ;
+    -o-transition:all 0.4s ;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+nav .menu a:hover {
+    color: var(--main-color) !important;
+    box-shadow: 0 0 0 2px var(--main-color);
+}
+
+nav .menu .active {
+    color: var(--main-color) !important;
+    box-shadow: 0 0 0 2px var(--main-color);
+}
+
+/*****************************************/
+
+#home  {
+    padding-top: 60px;
+    position: relative;
+}
+
+#home .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../img/banner.png'); 
+    background-size:cover;
+}
+
+#home form .btn-find {
+    padding: 10px 40px;
+}
+
+#home .card {
+    background-color: var(--bg-second-color);
+    color: var(--text-muted) !important;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#home .card .header {
+    background-color: #2D303D;
+}
+
+#home .card .temperature span {
+    font-size: 5.5rem;
+    color: var(--text-color);
+}
+
+#home .card .desc {
+    color: var(--main-color);
+}
+/****************************************************/
+
+/* footer */
+#footer {
+    background-color: var(--bg-third-color);
+}
+
+#footer .links {
+    width: max-content;
+}
+
+#footer .links li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+#footer .links li a:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+
+
+/* public classes */
+.my-input {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: 0;
+}
+
+.my-input:focus {
+    box-shadow: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);;
+}
+
+.my-input::placeholder {
+    color: #ffffff75;
+}
+
+.my-btn {
+    border: none;
+    padding: 10px 20px;
+    margin-right: 7px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+
+.my-text-muted {
+    color: var(--text-muted) !important;
+}

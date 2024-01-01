@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- My Style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- media query -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="logo">
+            <a class="navbar-brand text-white d-flex" href="#">
+                <img src="img/logo.png" alt="" srcset="">
+               <div class="text ms-2">
+                    <p class="m-0 fw-bold">Weather</p>
+                    <span class="d-block my-text-muted">tagline goes here</span>
+               </div>
+            </a>     
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="menu navbar-nav gap-lg-3 ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- home  -->
+    <section class="home" id="home">
+      <div class="img">
+      </div>
+      <div class="container pb-5">
+        <form class="form position-relative d-flex">
+            <input class="find-loation my-input form-control" type="text" name="findLocation" id="findLocation" placeholder="Find your location">
+            <button class="btn-find my-btn position-absolute align-self-center end-0 -0 rounded-5" id="btnFind" type="button">Find </button>
+        </form>
+        <div class="row mt-5">
+          <div class="col-lg-4 p-0">
+            <div class="card h-100 text-white">
+              <div class="header d-flex justify-content-between p-2">
+                <div class="name-day text-capitalize" id="day1"></div>
+                <div class="date text-capitalize" id="dateDay1"></div>
+              </div>
+              <div class="body p-3 ">
+                <div class="city fs-5 text-capitalize" id="country"></div>
+                <div class="temperature">
+                  <span class="fw-bolder me-4" id="tempDay1"></span> 
+                  <img class="w-25 w-lg-auto" id="iconDay1" src="" alt="weather" srcset="">
+                </div>
+                <div class="desc">
+                  <p id="statDay1"></p>
+                </div>
+              </div>
+              <div class="footer d-flex gap-4 p-3 pt-0">
+                <div class="umber">
+                  <img src="img/icon-umberella.png" alt="umberella" srcset="">
+                  <span>20%</span>
+                </div>
+                <div class="umber">
+                  <img src="img/icon-wind.png" alt="umberella" srcset="">
+                  <span>18km/h</span>
+                </div>
+                <div class="umber">
+                  <img src="img/icon-wind.png" alt="umberella" srcset="">
+                  <span>East</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0">
+            <div class="card position-relative h-100 text-white">
+              <div class="header py-2">
+                <div class="name-day text-center text-capitalize" id="day2"></div>
+              </div>
+              <div class="body position-relative z-3 my-auto text-center p-3">
+                <div class="temperature">
+                  <img class="" src="" alt="weather" srcset="" id="iconDay2">
+                  <span class="d-block fs-3 fw-bolder" id="maxTempDay2"></span>
+                  <p class="fw-bolder my-text-muted" id="minTempDay2"></p> 
+                </div>
+                <div class="desc">
+                  <p id="statDay2"></p>
+                </div>
+              </div>
+              <div class="overlay position-absolute top-0 end-0 w-100 h-100 bg-black opacity-25 z-0"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0">
+            <div class="card h-100 text-white">
+              <div class="header py-2">
+                <div class="name-day text-center text-capitalize" id="day3"></div>
+              </div>
+              <div class="body my-auto text-center p-3">
+                <div class="temperature">
+                  <img class="" src="" alt="weather" srcset="" id="iconDay3">
+                  <span class="d-block fs-3 fw-bolder" id="maxTempDay3"></span>
+                  <p class="fw-bolder my-text-muted" id="minTempDay3"></p> 
+                </div>
+                <div class="desc">
+                  <p id="statDay3">Patchy rain possible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer p-5" id="footer">
+      <div class="container">
+        <div class="row gap-5 gap-lg-0">
+          <div class="col-lg-8">
+            <form class="form position-relative d-flex">
+              <input class="email my-input form-control" type="text" name="email" id="email" placeholder="Enter your email to subscribe">
+              <button class="btn-subscribe my-btn position-absolute align-self-center end-0 -0 rounded-5" type="button">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <ul class="links m-auto text-white list-unstyled d-flex gap-2">
+              <li class=""><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class=""><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li class=""><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+              <li class=""><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copywrite my-text-muted text-center mt-5 ">
+          <p class="mb-0 "> Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+    </footerc>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
