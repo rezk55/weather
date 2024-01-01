@@ -27,4 +27,26 @@
     #home .card .temperature span {
         font-size: 3.5rem;
     }
+
+    #home form .btn-find {
+        padding: 7px 25px;
+    }
+
+    #footer .copywrite p {
+        font-size: 0.8rem;
+    }
+
+    .my-input {
+        padding: 10px;
+    }
+
+    .my-input::placeholder {
+        color: #ffffff75;
+        font-size: 0.8rem;
+    }
+
+    .my-btn {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+     }
 }
