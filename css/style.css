@@ -93,6 +93,7 @@ nav .menu .active {
 
 /*****************************************/
 
+/* home  */
 #home  {
     padding-top: 60px;
     position: relative;
@@ -171,9 +172,7 @@ nav .menu .active {
     background-color: var(--main-color);
     color: var(--text-color);
 }
-
-
-
+/*************************************************/
 /* public classes */
 .my-input {
     background-color: var(--bg-color);
@@ -204,7 +203,6 @@ nav .menu .active {
     background-color: var(--main-color);
     color: var(--text-color);
 }
-
 
 .my-text-muted {
     color: var(--text-muted) !important;

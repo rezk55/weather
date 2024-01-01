@@ -42,12 +42,12 @@ async function getWeather(loc){
     let futureData = response.forecast.forecastday;
     let futureDataAr = responseAr.forecast.forecastday;
     let date = new Date(response.current.last_updated); 
-    // console.log(response);
+    console.log(response);
     day1.innerHTML = days[date.getDay()];
     dateDay1.innerHTML =  date.getDate() + monthes[date.getMonth()];
     country.innerHTML = response.location.name;
     tempDay1.innerHTML = response.current.temp_c + "°C";
-    iconDay1.setAttribute('src','http:'+response.current.condition.icon);
+    iconDay1.setAttribute('src','https:'+response.current.condition.icon);
     statDay1.innerHTML = response.current.condition.text+'-'+responseAr.current.condition.text;
     descDay(day2,iconDay2,maxTempDay2,minTempDay2,statDay2,1);
     descDay(day3,iconDay3,maxTempDay3,minTempDay3,statDay3,2);
@@ -55,7 +55,7 @@ async function getWeather(loc){
 
     function descDay(day,iconDay,maxTempDay,minTempDay,statDay,index){
         day.innerHTML = days[date.getDay()+index];
-        iconDay.setAttribute('src','http:'+futureData[index].day.condition.icon);
+        iconDay.setAttribute('src','https:'+futureData[index].day.condition.icon);
         maxTempDay.innerHTML = futureData[index].day.maxtemp_c + "°C";
         minTempDay.innerHTML = futureData[index].day.mintemp_c + "°C";
         statDay.innerHTML = futureData[index].day.condition.text+'-'+ futureDataAr[index].day.condition.text; 
