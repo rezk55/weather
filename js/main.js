@@ -1,3 +1,4 @@
+'use strict'
 
 let findLocation = document.getElementById('findLocation');
 let btnFind = document.getElementById('btnFind');
